@@ -1,2 +1,2 @@
 #!/bin/bash
-0   string  SCHOOL  School data file file -m school.mgc example.data
+0   string  SCHOOL  School data file !:mime school
