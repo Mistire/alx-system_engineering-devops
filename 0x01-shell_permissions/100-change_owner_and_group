@@ -1,0 +1,2 @@
+#!/bin/bash
+sudeo chown -R vincent:staff .
