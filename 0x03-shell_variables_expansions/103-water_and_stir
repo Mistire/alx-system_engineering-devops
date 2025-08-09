@@ -1,8 +1,2 @@
 #!/bin/bash
-w_dec=$(echo "$WATER" | tr 'water' '01234')
-w_dec_val=$((5#$w_dec))
-s_dec=$(echo "$STIR" | tr 'stir.' '01234')
-s_dec_val=$((5#$s_dec))
-
-total_dec=$((w_dec_val + s_dec_val))
-echo "obase=8; $total_dec" | bc | tr '01234567' 'bestchol'
+echo -e "obase=8\nibase=10\n$((5#$(echo $WATER|tr water 01234)+5#$(echo $STIR|tr stir. 01234)))" | bc | tr 01234567 bestchol
